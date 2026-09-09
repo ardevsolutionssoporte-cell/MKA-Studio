@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "Interactive 3D Catalog Item",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "code": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "priceRaw": { "type": "number" },
+        "bulkPrice": { "type": "number" },
+        "imageUrl": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "videoUrl": { "type": "string" },
+        "description": { "type": "string" },
+        "specs": { "type": "array" },
+        "tags": { "type": "array" }
+      },
+      "required": ["name", "priceRaw", "imageUrl"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer Quote and Order Request",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "clientName": { "type": "string" },
+        "clientPhone": { "type": "string" },
+        "items": { "type": "array" },
+        "totalUSD": { "type": "number" },
+        "totalBs": { "type": "number" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["totalUSD", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/products/{productId}": {
+      "schema": "Product",
+      "description": "Catalog products for public browsing and admin management"
+    },
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Customer quotes generated and registered in the system"
+    }
+  }
+}

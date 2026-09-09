@@ -1,0 +1,48 @@
+{
+  "name": "MKA Studio Design System",
+  "version": "1.0.0",
+  "theme": "dark-luxury-glassmorphism",
+  "colors": {
+    "background": "#0A0A0F",
+    "surface": "#12121A",
+    "surfaceGlass": "rgba(18, 18, 26, 0.75)",
+    "primary": "#00F0FF",
+    "primaryGlow": "rgba(0, 240, 255, 0.35)",
+    "secondary": "#7000FF",
+    "accent": "#FF007A",
+    "textMain": "#FFFFFF",
+    "textMuted": "rgba(255, 255, 255, 0.6)",
+    "borderGlass": "rgba(255, 255, 255, 0.12)",
+    "borderGlassHover": "rgba(255, 255, 255, 0.3)"
+  },
+  "typography": {
+    "fontFamilyDisplay": "Playfair Display, serif",
+    "fontFamilySans": "Plus Jakarta Sans, sans-serif",
+    "fontFamilyMono": "JetBrains Mono, monospace"
+  },
+  "glassmorphism": {
+    "backdropFilter": "blur(16px)",
+    "border": "1px solid rgba(255, 255, 255, 0.12)",
+    "borderRadius": "16px",
+    "transition": "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)"
+  },
+  "shadows": {
+    "card": "0 20px 50px rgba(0, 0, 0, 0.8)",
+    "glow": "0 0 30px rgba(0, 240, 255, 0.25)",
+    "subtle": "0 4px 20px rgba(0, 0, 0, 0.5)"
+  },
+  "keyframes": {
+    "fadeIn": {
+      "from": { "opacity": 0 },
+      "to": { "opacity": 1 }
+    },
+    "slideLeft": {
+      "from": { "transform": "translateX(100%)" },
+      "to": { "transform": "translateX(0)" }
+    },
+    "float": {
+      "0%, 100%": { "transform": "translateY(0px)" },
+      "50%": { "transform": "translateY(-12px)" }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MKA Studio | Catálogo Inmersivo",
+  "description": "Catálogo interactivo en dark mode para MKA Studio con SplashScreen y ProductCanvas 3D animado con GSAP ScrollTrigger y Flip.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
